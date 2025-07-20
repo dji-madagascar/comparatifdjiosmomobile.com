@@ -226,6 +226,7 @@
             min-height: 480px;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
         }
 
         .product-card::before {
@@ -278,6 +279,9 @@
         .product-content {
             padding: 1.5rem;
             flex-grow: 1; /* Allow content to grow and take available space */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .product-title {
@@ -315,6 +319,8 @@
             position: relative;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            margin-top: auto;
+            align-self: center;
         }
 
         .buy-button::before {
@@ -485,6 +491,24 @@
 
         .osmo6-img, .osmoSE-img {
             object-position: center -100px;
+        }
+
+        .hero .container {
+            max-width: 900px;
+        }
+        .hero p {
+            font-size: 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .hero .container {
+                max-width: 98vw;
+            }
+            .hero p {
+                font-size: 0.95rem;
+                max-width: 98vw;
+            }
         }
     </style>
 </head>
